@@ -54,7 +54,7 @@ body {
     
 }
 .foto {
-    background-image: url("images/flowers.png");
+    background-image: url("images/bcn.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
@@ -70,7 +70,7 @@ body {
 
 }
 .top{
-    background-color:#362c36;
+    background-color:black;
     height:180px;
     font-size: 1.2rem;
     padding-top: 100px;
@@ -83,14 +83,18 @@ body {
     
 }
 .middle {
-    background-color: #4d4c59;;
+    background-color: black;;
     height:200px;
     padding:10px 120px 10px 40px;
     color:#f7f6f0;
+    box-shadow:
+    inset 0px 11px 8px -10px #a7cbd5,
+    inset 0px -11px 8px -10px #a7cbd5;  
+    
 }
 
 .bottom {
-    background-color:#362c36;
+    background-color:black;
     height:220px;
     padding-left:30px;
     padding-top:30px;
@@ -111,6 +115,7 @@ body {
     height:130px;
     width:600px;
     
+    
 }
 #formInfo {
     display:flex;
@@ -127,7 +132,7 @@ input {
     border-radius:.5em;
     padding:5px;
     border:0; 
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 4px #a7cbd5;
 }
 
 input:invalid {
@@ -144,14 +149,15 @@ a {
     color:#a7cbd5;
 }
 button {
-    background-color:#a7cbd5;
+    background-color:black;
     height:40px;
     width:28%;
     font-size:1rem;
     font-weight:600;
-    color:black;
+    color:#a7cbd5;
     border-radius:.5em;
     margin-bottom:30px;
+    border: 2px solid #a7cbd5
 }
 p {
     color:#71777d
