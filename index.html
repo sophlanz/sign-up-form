@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Numans&display=swap" rel="stylesheet">
+    <script src = "index.js" defer></script>
     <title>sign-up-form</title>
 </head>
 <body>
@@ -13,19 +17,49 @@
         <div class = "signup">
             <div class = "top">
                 <p>This is not a real online service! You know you need something like this in your life
-                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                to help you realize your deepest dreams. Sign up <em style = "color:#a7cbd5">now</em> to get started.
                 </p>    
                 <br>
-                <p>You <em>know</em> you want to.
+                <p>You <em style = "color:#a7cbd5">know</em> you want to.
                 </p>
             </div>
             <div class = "middle">
                 <h1>Let's do this!</h1>
-            </div>
-            <div class = "bottom">
-                <p>Already have an account?login</p>
+            <div id= "signupForm">
+                <form action = "" method = "POST" id="formInfo" >
+                    <div id = "user_info">
+                        <label for = "firstName">FIRST NAME:</label>
+                        <input type = "text" id="firstName" name= "first_name" placeholder= "Sophia">
+                    </div>  
+                    <div id = "user_info">
+                        <label for = "lastName">LAST NAME:</label>
+                        <input type = "text" id= "lastName" name= "last_name" placeholder= "Lanzendorf">
+                    </div>
+                    <div id = "user_info">
+                        <label for = "email">EMAIL:</label>
+                        <input type ="email" id="email" name= "email">
+                    </div>
+                    <div id = "user_info">
+                        <label for ="phoneNum">PHONE NUMBER:</label>
+                        <input type = "number" id= "phoneNum" name="phone_number">
+                    </div>
+                    <div id = "user_info">
+                        <label for = "password" >PASSWORD: </label>
+                        <input type ="password" id="password" minlength="6" autocomplete="on">
+                    </div>
+                    <div id = "user_info">
+                        <label for = "passwordConfirm" >CONFIRM PASSWORD: </label>
+                        <input type ="password" id="passwordConfirm" name="password" minlength="6" autocomplete="on">
+                    </div>
+                    <div id= "errorMsg"> </div>
+                </form>
             </div>
         </div>
+            <div class = "bottom">
+                <button type = "submit">Create Account</button>
+            <p>Already have an account?<a href = ""> Log in</a></p>
+            </div>
+        </div>  
     </div>
 </body>
 </html>

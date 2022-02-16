@@ -50,16 +50,16 @@ body {
     position:static;
     overflow:hidden;
     line-height: 1;
-   
+    font-family: 'ABeeZee', sans-serif;
     
 }
 .foto {
-    background-image: url("images/bcn.png");
+    background-image: url("images/flowers.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
     height:730px;
-    width:1000px;
+    width:1200px;
 
 
 }
@@ -70,26 +70,89 @@ body {
 
 }
 .top{
-    background-color:#383d1f;
+    background-color:#362c36;
     height:180px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding-top: 100px;
-    padding-left:30px;
-    padding-right:120px;
+    padding-left:40px;
+    padding-right:130px;
+    color:#71777d;
+    word-spacing: 1.3px;
+    line-height:25px;
+    
     
 }
 .middle {
-    background-color:#d3e6f8;
+    background-color: #4d4c59;;
     height:200px;
-    padding:10px 120px 10px 30px;
-
+    padding:10px 120px 10px 40px;
+    color:#f7f6f0;
 }
+
 .bottom {
-    background-color:#383d1f;
+    background-color:#362c36;
     height:220px;
     padding-left:30px;
-    padding-top:10px;
+    padding-top:30px;
+    
+}
+#user_info {
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    height:15px;
+    margin-top:10px;
+    
+   
+}
+#signupForm {
+    
+    font-size:.7em;
+    height:130px;
+    width:600px;
+    
+}
+#formInfo {
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:65px;  
 }
 h1{
     font-size:20px;
+    margin-bottom:10px;
+    color:#a7cbd5
+}
+input {
+    width:200px;
+    border-radius:.5em;
+    padding:5px;
+    border:0; 
+    box-shadow: 4px 4px black;
+}
+
+input:invalid {
+    border-color:red;
+}
+input:focus {
+    border-color:#a7cbd5;
+}
+#errorMsg {
+    color:red;
+}
+a {
+    text-decoration:none;
+    color:#a7cbd5;
+}
+button {
+    background-color:#a7cbd5;
+    height:40px;
+    width:28%;
+    font-size:1rem;
+    font-weight:600;
+    color:black;
+    border-radius:.5em;
+    margin-bottom:30px;
+}
+p {
+    color:#71777d
 }
