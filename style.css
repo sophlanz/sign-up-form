@@ -203,8 +203,10 @@ h1 {
 }
 [href*= "plane"] {
     color:#f7f6f0;
+    text-align:center;
     
 }
 [href*= "unsplash"] {
     color:#f7f6f0;
+    
 }
