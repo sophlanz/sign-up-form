@@ -52,14 +52,19 @@ body {
     line-height: 1;
     font-family: 'ABeeZee', sans-serif;
     
-}
+} 
 .foto {
     background-image: url("images/bcn.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     overflow:hidden;
     height:730px;
     width:1200px;
+    object-fit:contain;
+    
+    
+
+    
 
 
 }
@@ -122,7 +127,7 @@ body {
     flex-wrap:wrap;
     column-gap:65px;  
 }
-h1{
+h2{
     font-size:20px;
     margin-bottom:10px;
     color:#a7cbd5
@@ -131,12 +136,12 @@ input {
     width:200px;
     border-radius:.5em;
     padding:5px;
-    border:0; 
     box-shadow: 4px 4px #a7cbd5;
 }
 
 input:invalid {
     border-color:red;
+    
 }
 input:focus {
     border-color:#a7cbd5;
@@ -159,6 +164,47 @@ button {
     margin-bottom:30px;
     border: 2px solid #a7cbd5
 }
+button:hover {
+    background-color: #a7cbd5;
+    color:black;
+
+}
 p {
     color:#71777d
+}
+#banner {
+    background-color:rgba(0, 0, 0, 0.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:225px;
+    
+   
+    
+}
+img[src="images/airplane.png"] {
+    height:50px;
+    width:50px;
+}
+h1 {
+    color:black;
+    font-size:3.5rem;
+    text-shadow: 2.5px 2.5px #a7cbd5;
+}
+#citation {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-content:center;
+    margin-top:390px;
+    font-size:10px;
+    
+   
+}
+[href*= "plane"] {
+    color:#f7f6f0;
+    
+}
+[href*= "unsplash"] {
+    color:#f7f6f0;
 }

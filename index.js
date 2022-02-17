@@ -1,4 +1,5 @@
  document.getElementById('passwordConfirm').addEventListener('change', passwordMatch);
+ document.getElementById('password').addEventListener('change', passwordMatch);
  function passwordMatch () {
     const password = document.getElementById("password");
     const passwordConfirm = document.getElementById("passwordConfirm");
